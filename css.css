@@ -238,4 +238,70 @@ img {
 /* --------------------------------------------------- */
 /* Mælke experiment */
 
+.milk-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px;
+    margin-top: 40px;
+}
 
+.milk-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.milk-item img {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.info-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 300px;
+    height: 300px;
+    background: rgba(75, 0, 130, 0.95);
+    border-radius: 50%;
+    padding: 30px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.info-circle h3 {
+    margin: 0 0 5px 0;
+    color: white;
+}
+
+.info-circle p {
+    margin: 0 0 15px 0;
+    color: #ccc;
+}
+
+.info-circle ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+    color: white;
+}
+
+.info-circle li {
+    margin-bottom: 8px;
+}
+
+.milk-item:hover .info-circle {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.milk-item:hover img {
+    transform: scale(1.1);
+}
