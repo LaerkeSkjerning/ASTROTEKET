@@ -175,45 +175,50 @@ h1 {
 /* Andreas Mogensen */
 
 
-header {
-    margin-bottom: 40px;
+
+
+
+h2 {
+    font-size: 2rem; 
+    margin: 10px 0; 
+    text-align: center;
 }
 
-h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
 
 .andreash2 {
-    font-size: 2em;
-    margin: 10px 0;
+    font-size: 2rem; 
+    margin: 10px 0; 
 }
 
+
 .content {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 800px; 
+    margin: 0 auto; 
 }
 
 section {
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
 }
 
 .andreash3 {
-    font-size: 1.5em;
-    margin: 20px 0 10px;
+    font-size: 1.5rem; 
+    margin: 20px 0 10px; 
 }
 
 .tekstandreas {
-    font-size: 1.1em;
-    line-height: 1.5;
+    font-size: 1.1rem; 
+    line-height: 1.5; 
 }
-
-
-img {
-    max-width: 80%;
-    height: auto;
-    margin-top: 10px;
-   
+.andreas-img {
+    width: 100%; 
+    max-width: 600px; 
+    height: auto; 
+    border: 2px solid #000; 
+    border-radius: 8px; 
+    margin: 20px 0; 
+    display: block; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    float: right;
 }
 
 
