@@ -12,9 +12,10 @@ nextBtn.addEventListener('click', () => {
 const options = document.querySelectorAll('.option');
 options.forEach(option => {
     option.addEventListener('click', () => {
-        // Fjern tidligere valgte svar
-        options.forEach(opt => opt.style.backgroundColor = '');
+        // Fjern tidligere valgte svar i det aktuelle spørgsmål
+        const currentOptions = option.closest('.question').querySelectorAll('.option');
+        currentOptions.forEach(opt => opt.classList.remove('selected'));
         // Marker det valgte svar
-        option.style.backgroundColor = '#d4d4d4';
+        option.classList.add('selected');
     });
 });
