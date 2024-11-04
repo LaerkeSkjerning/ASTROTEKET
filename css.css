@@ -15,9 +15,8 @@ header {
     margin-bottom: 40px;
 }
 
-#logo {
+h1 img {
     width: 20rem;
-    margin-bottom: 5px;
 }
 
 nav {
@@ -211,10 +210,10 @@ section {
 
 
 img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
-    margin-top: 20px;
-    align-con: right;
+    margin-top: 10px;
+   
 }
 
 
