@@ -1,5 +1,19 @@
 // Forside
-
+const planets = [
+    {
+        name: 'SOLEN',
+        title: 'Stjernen i Solsystemet',
+        description: 'Solen er en gul dværg (type G2) og udgør centrum af vores solsystem, hvor den indeholder omkring 99,86% af den samlede masse.',
+        image: 'path/to/sun.jpg'
+    },
+    {
+        name: 'MERKUR',
+        title: 'Nærmest Solen',
+        description: 'Merkur er den planet, der ligger tættest på Solen, med en gennemsnitlig afstand på cirka 57,91 millioner km.',
+        image: 'path/to/mercury.jpg'
+    },
+    // Add other planets...
+];
 
 
 //Mælkeexperiment

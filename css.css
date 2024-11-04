@@ -12,7 +12,7 @@ body {
 /* Header */
 header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 5px;
 }
 
 #logo {
@@ -43,13 +43,43 @@ nav {
 
 .nav-arrow {
     background: rgba(255, 255, 255, 0.1);
-    border: none;
+    border: 0.5px solid white;
     color: var(--primary-color);
     font-size: 2rem;
     padding: 20px;
+    margin: 50px;
     cursor: pointer;
     border-radius: 50%;
     transition: background-color 0.3s;
+}
+
+.nav-arrow:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.planet-content {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.planet-name {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.planet-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.orbit-diagram {
+    margin-bottom: 0px;
+}
+
+.planet-image {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
 }
 
 /* --------------------------------------------------- */
