@@ -147,7 +147,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-h2 {
+.andreash2 {
     font-size: 2em;
     margin: 10px 0;
 }
@@ -161,12 +161,12 @@ section {
     margin-bottom: 30px;
 }
 
-h3 {
+.andreash3 {
     font-size: 1.5em;
     margin: 20px 0 10px;
 }
 
-p {
+.tekstandreas {
     font-size: 1.1em;
     line-height: 1.5;
 }
@@ -175,3 +175,4 @@ img {
     max-width: 100%;
     height: auto;
     margin-top: 20px;
+}
