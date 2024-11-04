@@ -1,69 +1,15 @@
 /* --------------------------------------------------- */
-/* Forside */
-
-
-/* --------------------------------------------------- */
-/* Quiz */
-
-
-/* --------------------------------------------------- */
-/* Andreas Mogensen */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin: 0;
-}
-
-header {
-    margin-bottom: 40px;
-}
-
-h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 2em;
-    margin: 10px 0;
-}
-
-.content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-section {
-    margin-bottom: 30px;
-}
-
-h3 {
-    font-size: 1.5em;
-    margin: 20px 0 10px;
-}
-
-p {
-    font-size: 1.1em;
-    line-height: 1.5;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-=======
-
-
+/* General */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: #000 url('stars-bg.jpg') repeat;
+    background: #000 url('images/space.png') repeat;
     color: white;
 }
+
+/* --------------------------------------------------- */
+/* Forside */
 
 nav {
     padding: 20px 40px;
@@ -86,6 +32,10 @@ nav {
 .menu a.active {
     font-weight: bold;
 }
+
+/* --------------------------------------------------- */
+/* Quiz */
+
 
 .quiz-container {
     max-width: 1200px;
@@ -182,4 +132,47 @@ h1 {
 .next-btn:hover {
     background: rgba(255, 255, 255, 0.1);
 >>>>>>> 9f22f2647449efec8c56f2b19613b6fded447908
+}
+
+/* --------------------------------------------------- */
+/* Andreas Mogensen */
+
+
+header {
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.andreash2 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.andreash3 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+}
+
+.tekstandreas {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
 }
