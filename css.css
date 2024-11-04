@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: #000 url('images/space.png') repeat;
+    background: #000 url('images/space.webp') repeat;
     color: white;
 }
 
@@ -131,7 +131,6 @@ h1 {
 
 .next-btn:hover {
     background: rgba(255, 255, 255, 0.1);
->>>>>>9f22f2647449efec8c56f2b19613b6fded447908
 }
 
 /* --------------------------------------------------- */
