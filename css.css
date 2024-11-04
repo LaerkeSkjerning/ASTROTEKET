@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: #000 url('images/space.png') repeat;
+    background: #000 url('images/space.webp') repeat;
     color: white;
 }
 
@@ -131,7 +131,6 @@ h1 {
 
 .next-btn:hover {
     background: rgba(255, 255, 255, 0.1);
->>>>>>> 9f22f2647449efec8c56f2b19613b6fded447908
 }
 
 /* --------------------------------------------------- */
@@ -147,7 +146,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-.andreash2 {
+h2 {
     font-size: 2em;
     margin: 10px 0;
 }
@@ -161,12 +160,12 @@ section {
     margin-bottom: 30px;
 }
 
-.andreash3 {
+h3 {
     font-size: 1.5em;
     margin: 20px 0 10px;
 }
 
-.tekstandreas {
+p {
     font-size: 1.1em;
     line-height: 1.5;
 }
@@ -175,4 +174,3 @@ img {
     max-width: 100%;
     height: auto;
     margin-top: 20px;
-}
