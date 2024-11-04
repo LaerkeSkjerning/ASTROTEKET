@@ -1,0 +1,30 @@
+.quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.question {
+    display: none;
+}
+
+.question.active {
+    display: block;
+}
+
+.option {
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
+
+.next-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
