@@ -7,24 +7,32 @@
     <script src="js.js"></script>
 </head>
 <body>
+    <nav>
+        <div class="logo">ASTROTEKET</div>
+        <div class="menu">
+            <a href="#">Mælke experiment</a>
+            <a href="#">Andreas Mogensen</a>
+            <a href="#" class="active">Quiz dig selv</a>
+        </div>
+    </nav>
+    
     <div class="quiz-container">
         <h1>Quiz om rummet</h1>
-        <div id="quiz">
-            <div class="question active" data-question="1">
-                <p>Hvilken planet er kendt for sine imponerende ringe og har en densitet så lav, at den kunne flyde i et kæmpe badekar?</p>
-                <div class="option">Neptun</div>
-                <div class="option">Saturn</div>
-                <div class="option">Uranus</div>
+        <div class="quiz-content">
+            <div class="astronaut">
+                <img src="astronaut.png" alt="Astronaut">
             </div>
-            
-            <div class="question" data-question="2">
-                <p>På hvilken planet finder vi den største vulkan i solsystemet, Olympus Mons?</p>
-                <div class="option">Mars</div>
-                <div class="option">Jupiter</div>
-                <div class="option">Jorden</div>
+            <div id="quiz">
+                <div class="question active" data-question="1">
+                    <p>Hvilken planet er kendt for sine imponerende ringe og har en densitet så lav, at den kunne flyde i et kæmpe badekar?</p>
+                    <div class="options">
+                        <div class="option"><span class="dot"></span>Neptun</div>
+                        <div class="option"><span class="dot"></span>Saturn</div>
+                        <div class="option"><span class="dot"></span>Uranus</div>
+                    </div>
+                    <button class="next-btn">→</button>
+                </div>
             </div>
-            
-            <button class="next-btn">Næste spørgsmål →</button>
         </div>
     </div>
 </body>
