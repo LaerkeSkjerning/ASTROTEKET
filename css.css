@@ -15,8 +15,9 @@ header {
     margin-bottom: 40px;
 }
 
-h1 img {
+#logo {
     width: 20rem;
+    margin-bottom: 5px;
 }
 
 nav {
