@@ -34,6 +34,23 @@ nav {
 /* --------------------------------------------------- */
 /* Forside */
 
+.planet-viewer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav-arrow {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: var(--primary-color);
+    font-size: 2rem;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
 
 /* --------------------------------------------------- */
 /* Quiz */
