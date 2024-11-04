@@ -30,37 +30,37 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             question: "Hvilken planets atmosfære består primært af kuldioxid og har en overflade varm nok til at smelte bly?",
-            options: ["Venus", "Saturn", "Uranus"],
+            options: ["Venus", "Jupiter", "Markur"],
             correct: 1
         },
         {
             question: "Hvilken planet har den korteste dag i solsystemet, der varer kun omkring 10 timer?",
-            options: ["Neptun", "Markur", "Jupiter"],
+            options: ["Mars", "Markur", "Jupiter"],
             correct: 1
         },
         {
             question: "Hvilken af Jupiters måner menes at have et underjordisk hav og betragtes som et muligt sted for liv uden for Jorden?",
-            options: ["Mars", "Jupiter", "Markur"],
+            options: ["Europa", "Io", "Ganymedes"],
             correct: 1
         },
         {
             question: "Hvad er navnet på den gigantiske storm på Jupiter, der har raset i over 300 år og er større end Jorden?",
-            options: ["Neptun", "Saturn", "Uranus"],
-            correct: 1
+            options: ["Den Store Gule Plet", "Den Store Røde Plet", "Den Store Grønne Plet"],
+            correct: 2
         },
         {
             question: "Hvilken planet blev først opdaget ved matematiske beregninger snarere end direkte observation?",
-            options: ["Neptun", "Saturn", "Uranus"],
+            options: ["Neptun", "Uranus", "Saturn"],
             correct: 1
         },
         {
             question: "Hvor lang tid tager det cirka for solens lys at nå Jorden?",
-            options: ["Neptun", "Saturn", "Uranus"],
-            correct: 1
+            options: ["6 minutter og 58 sekunder", "10 minutter og 15 sekunder", "8 minutter og 20 sekunder"],
+            correct: 3
         },
         {
             question: "Hvilken proces i Solens kerne er ansvarlig for at producere dens enorme energi?",
-            options: ["Neptun", "Saturn", "Uranus"],
+            options: ["Kernefusion", "Kemisk forbrænding", "Kernefission"],
             correct: 1
         },
     ];
