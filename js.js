@@ -1,3 +1,16 @@
+// Forside
+
+
+
+//Mælkeexperiment
+
+
+
+//Andreas Mogensen
+
+
+//Quiz
+
 document.addEventListener('DOMContentLoaded', () => {
     const questions = [
         {
