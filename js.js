@@ -16,17 +16,17 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             question: "Hvilken planet er kendt for sine imponerende ringe og har en densitet så lav, at den kunne flyde i et kæmpe badekar?",
             options: ["Neptun", "Saturn", "Uranus"],
-            correct: 1
+            correct: 2
         },
         {
             question: "På hvilken planet finder vi den største vulkan i solsystemet, Olympus Mons?",
             options: ["Mars", "Jupiter", "Jorden"],
-            correct: 0
+            correct: 1
         },
         {
             question: "Hvilken planet ruller nærmest på siden i sin bane omkring Solen med en aksehældning på 98 grader?",
             options: ["Saturn", "Solen", "Uranus"],
-            correct: 1
+            correct: 3
         },
         {
             question: "Hvilken planets atmosfære består primært af kuldioxid og har en overflade varm nok til at smelte bly?",
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             question: "Hvilken planet har den korteste dag i solsystemet, der varer kun omkring 10 timer?",
             options: ["Mars", "Markur", "Jupiter"],
-            correct: 1
+            correct: 3
         },
         {
             question: "Hvilken af Jupiters måner menes at have et underjordisk hav og betragtes som et muligt sted for liv uden for Jorden?",
@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     let currentQuestion = 0;
+    let score = 0;
     const quizContainer = document.getElementById('quiz');
 
     function showQuestion(questionIndex) {
@@ -81,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                     `).join('')}
                 </div>
-                <button class="next-btn">→</button>
+                <button class="next-btn" disabled>→</button>
             </div>
         `;
 
@@ -95,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Tilføj click handler til next button
         const nextBtn = document.querySelector('.next-btn');
-        nextBtn.addEventListener('click', nextQuestion);
+        nextBtn.addEventListener('click', checkAnswerAndProceed);
     }
 
     function selectOption(e) {
@@ -105,14 +106,47 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Tilføj selected class til den valgte option
         e.currentTarget.classList.add('selected');
+        
+        // Aktiver next-knappen
+        document.querySelector('.next-btn').disabled = false;
     }
 
-    function nextQuestion() {
+    function checkAnswerAndProceed() {
+        const selectedOption = document.querySelector('.option.selected');
+        if (selectedOption) {
+            const selectedAnswer = parseInt(selectedOption.dataset.index);
+            if (selectedAnswer === questions[currentQuestion].correct) {
+                score++;
+            }
+        }
+        
         currentQuestion++;
         if (currentQuestion >= questions.length) {
-            currentQuestion = 0; // Start forfra hvis vi er nået til enden
+            showResults();
+        } else {
+            showQuestion(currentQuestion);
         }
-        showQuestion(currentQuestion);
+    }
+
+    function showResults() {
+        const resultatHTML = `
+            <div class="results">
+                <h2>Tak fordi du quizzede med!</h2>
+                <p>Du fik ${score} ud af ${questions.length} rigtige svar!</p>
+                <button class="restart-btn">Tag quizzen igen</button>
+            </div>
+        `;
+        
+        quizContainer.innerHTML = resultatHTML;
+        
+        // Tilføj click handler til restart-knappen
+        document.querySelector('.restart-btn').addEventListener('click', restartQuiz);
+    }
+
+    function restartQuiz() {
+        currentQuestion = 0;
+        score = 0;
+        showQuestion(0);
     }
 
     // Start quizzen ved at vise første spørgsmål
