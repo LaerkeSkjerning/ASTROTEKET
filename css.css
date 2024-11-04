@@ -235,36 +235,41 @@ h2 {
 .andreash2 {
     font-size: 2rem; 
     margin: 10px 0; 
+    text-align: center;
 }
 
 
 .content {
     max-width: 800px; 
     margin: 0 auto; 
+    align-content: center;
 }
 
 section {
     margin-bottom: 30px; 
 }
 
+
 .andreash3 {
     font-size: 1.5rem; 
-    margin: 20px 0 10px; 
+    margin: 20px 0 10px;
+
 }
 
 .tekstandreas {
     font-size: 1.1rem; 
-    line-height: 1.5; 
+    line-height: 1.5;
+    text-align: center; 
 }
+
 .andreas-img {
-    width: 100%; 
+    width: 75%; 
     max-width: 600px; 
     height: auto; 
-    border: 2px solid #000; 
-    border-radius: 8px; 
-    margin: 20px 0; 
+    border: 1px solid #000; 
+    border-radius: 5px; 
+    margin: 30px 0; 
     display: block; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     float: right;
 }
 
