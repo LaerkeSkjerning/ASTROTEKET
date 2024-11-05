@@ -1,5 +1,83 @@
 // Forside
+const planets = [
+    {
+        name: 'SOLEN',
+        image: 'images/sun.webp',
+        description: 'Stjernen i Solsystemet',
+        fact: 'Solen er en gul dværg (type G2) og udgør centrum af vores solsystem, hvor den indeholder omkring 99.86% af den samlede masse. Dens enorme gravitation holder de otte planeter og mange andre himmellegemer i bane omkring sig.'
+    },
+    {
+        name: 'MERKUR',
+        image: 'images/mercury.webp',
+        description: 'Nærmest Solen',
+        fact: 'Merkur er den planet, der ligger tættest på Solen, med en gennemsnitlig afstand på cirka 57,91 millioner km. Ekstrem temperatur: Den har ekstremt varierende temperaturer, der kan nå op til 430 grader Celsius om dagen og falde til -180 grader Celsius om natten.'
+    },
+    {
+        name: 'VENUS',
+        description: 'Lignende størrelse som Jorden',
+        fact: 'Venus er ofte kaldt "Jordens tvilling" på grund af sin lignende størrelse og sammensætning, men dens atmosfære er meget forskelligartet. Tyk atmosfære: Atmosfæren består primært af kuldioxid og svovlsyre, hvilket skaber en ekstrem drivhuseffekt og gør overfladen til den varmeste i solsystemet.',
+        image: 'images/venus.webp',
+    },
+    {
+        name: 'JORDEN',
+        description: 'Livets hjemsted',
+        fact: 'Jorden er den eneste planet kendt for at huse liv, med et varieret klima og store mængder vand. Aktiv pladetektonik: Den har en aktiv pladetektonik, hvilket betyder, at dens overflade konstant ændrer sig gennem geologiske processer.',
+         image: 'images/earth.webp',
+    },
+    {
+        name: 'MARS',
+        description: 'Rød plante',
+        fact: 'Mars kaldes ofte den "røde planet" på grund af jernoxid (rust) på dens overflade, som giver den en rødlig farve. Mulighed for liv: Mars har været genstand for stor interesse i søgen efter liv, da der er fundet spor af vand i form af is og tidligere flydende vand.',
+        image: 'images/mars.webp',
+    },
+    {
+        name: 'JUPITER',
+        description: 'Største planet',
+        fact: 'Jupiter er den største planet i solsystemet og har en diameter på omkring 139.822 km. Mange måner: Den har mere end 79 kendte måner, herunder de fire store måner kaldet Galileiske måner: Io, Europa, Ganymedes og Callisto.',
+        image: 'images/jupiter.webp',
+    },
+    {
+        name: 'SATURN',
+        description: 'Ringe system',
+        fact: 'Saturn er berømt for sine imponerende ringsystemer, der består af ispartikler og små sten. Gasplanet: Som en gasplanet har Saturn ikke en fast overflade; dens atmosfære er primært sammensat af hydrogen og helium.',
+        image: 'images/saturn.webp',
+    },
+    {
+        name: 'URANUS',
+        description: 'Skæv rotation',
+        fact: 'Uranus roterer på sin side med en aksel hældning på omkring 98 grader, hvilket gør dens rotationsakse næsten vandret. Koldest planet: Den har også den laveste temperatur blandt planeterne i solsystemet, med minimumstemperaturer omkring -224 grader Celsius.',
+        image: 'images/uranus.webp',
+    },
+    {
+        name: 'NEPTUN',
+        description: 'Fjerntliggende planet',
+        fact: 'Neptun er den mest fjerntliggende planet i solsystemet og ligger cirka 4,5 milliarder km fra Solen. Vejrfænomener: Den er kendt for sine kraftige vinde og storme, herunder den berømte "Great Dark Spot," som minder om Jordens storme.',
+        image: 'images/neptun.webp',
+    },
+];
 
+// let currentPlanetIndex = 0;
+
+// function updatePlanetDisplay() {
+//     const planet = planets[currentPlanetIndex];
+//     document.getElementById('planet-image').src = planet.image;
+//     document.getElementById('planet-name').textContent = planet.name;
+//     document.getElementById('planet-description').textContent = planet.description;
+//     document.getElementById('planet-fact').textContent = planet.fact;
+// }
+
+// document.querySelector('.prev-btn').addEventListener('click', () => {
+//     currentPlanetIndex = (currentPlanetIndex - 1 + planets.length) % planets.length;
+//     updatePlanetDisplay();
+// });
+
+// document.querySelector('.next-btn').addEventListener('click', () => {
+//     currentPlanetIndex = (currentPlanetIndex + 1) % planets.length;
+//     updatePlanetDisplay();
+// });
+
+// // Initialize display
+// updatePlanetDisplay();
 
 
 //Mælkeexperiment
