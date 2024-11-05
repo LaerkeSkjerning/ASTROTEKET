@@ -64,14 +64,14 @@ const planets = [
         orbitPosition: 162
     },
 ];
-let currentPlanetIndex = 0;
+let currentPlanetIndex = 0; // Start with the first planet (Sun)
 
 function updatePlanetDisplay() {
     const planet = planets[currentPlanetIndex];
     document.querySelector('.planet-name').textContent = planet.name;
     document.querySelector('.planet-info h3').textContent = planet.title;
     document.querySelector('.planet-info p').textContent = planet.description;
-    // Update image and orbit diagram
+    document.querySelector('.planet-image').src = planet.image;
 }
 
 document.querySelector('.nav-arrow.left').addEventListener('click', () => {
@@ -88,34 +88,24 @@ function updateOrbitDiagram() {
     const planet = planets[currentPlanetIndex];
     const currentMarker = document.querySelector('.current-planet-marker');
     
-    // Update current planet marker position
     currentMarker.style.left = `${planet.orbitPosition}%`;
     
-    // Update all planet markers
     document.querySelectorAll('.planet-marker').forEach((marker, index) => {
         marker.classList.remove('active');
-        if (index === currentPlanetIndex - 1) { // -1 because Sun is at index 0
+        if (index === currentPlanetIndex) {
             marker.classList.add('active');
         }
     });
+
 }
 
-// Add click handlers for planet markers
 document.querySelectorAll('.planet-marker').forEach((marker, index) => {
     marker.addEventListener('click', () => {
-        currentPlanetIndex = index + 1; // +1 because Sun is at index 0
+        currentPlanetIndex = index;
         updatePlanetDisplay();
-        updateOrbitDiagram();
     });
 });
 
-// Update the existing updatePlanetDisplay function
-function updatePlanetDisplay() {
-    // ... existing code ...
-    updateOrbitDiagram();
-}
-
-// Add these styles for active state
 const additionalStyles = `
     .planet-marker.active {
         background: var(--accent-color);
@@ -123,7 +113,6 @@ const additionalStyles = `
     }
 `;
 
-// Create and append style element
 const styleElement = document.createElement('style');
 styleElement.textContent = additionalStyles;
 document.head.appendChild(styleElement);
