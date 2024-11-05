@@ -52,7 +52,7 @@ const planets = [
         name: 'NEPTUN',
         description: 'Fjerntliggende planet',
         fact: 'Neptun er den mest fjerntliggende planet i solsystemet og ligger cirka 4,5 milliarder km fra Solen. Vejrfænomener: Den er kendt for sine kraftige vinde og storme, herunder den berømte "Great Dark Spot," som minder om Jordens storme.',
-        image: 'images/neptun.webp',
+        image: 'images/neptune.webp',
     },
 ];
 
