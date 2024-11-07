@@ -269,6 +269,20 @@ section {
     float: right;
 }
 
+.video-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 500px; 
+    width: 100%; 
+}
+
+.scaled-video {
+    width: 80%; 
+    max-width: 640px; 
+    height: auto; 
+    margin: auto;
+}
 
 /* --------------------------------------------------- */
 /* Mælke experiment */
