@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: inter;
     background: #000 url('images/space.webp') repeat;
     color: white;
 }
@@ -16,7 +16,7 @@ header {
 }
 
 #logo {
-    width: 20rem;
+    width: 15rem;
 }
 
 nav {
