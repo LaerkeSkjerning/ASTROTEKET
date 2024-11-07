@@ -42,13 +42,14 @@ nav {
 .planet-content {
     position: relative;
     width: 1000px;
-    height: 1000px;
+    height: 900px;
 }
 
 #planet-image {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    margin: auto;
 }
 
 .orbit-ring {
@@ -57,10 +58,41 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    height: 90%;
+    height: 100%;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 50%;
+    margin-top: 20%;
 }
+
+.orbit-marker {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.orbit-label {
+    position: absolute;
+    color: white;
+    font-size: 0.8rem;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    margin-top: -20px; /* Add some space between marker and label */
+}
+
+/* Position the markers and labels along the upper half of the orbit */
+.orbit-marker:nth-child(1), .orbit-label:nth-child(2) { top: 40%; left: 1%; } /* solen */
+.orbit-marker:nth-child(3), .orbit-label:nth-child(4) { top: 25%; left: 6.6%; } /* merkur */
+.orbit-marker:nth-child(5), .orbit-label:nth-child(6) { top: 12%; left: 17.3%; } /* venus */
+.orbit-marker:nth-child(7), .orbit-label:nth-child(8) { top: 3%; left: 32.6%; } /* jorden */
+.orbit-marker:nth-child(9), .orbit-label:nth-child(10) { top: 0%; left: 50%; } /* mars */
+.orbit-marker:nth-child(11), .orbit-label:nth-child(12) { top: 3%; left: 67.4%; } /* jupiter */
+.orbit-marker:nth-child(13), .orbit-label:nth-child(14) { top: 12%; left: 82.7%; } /* saturn */
+.orbit-marker:nth-child(15), .orbit-label:nth-child(16) { top: 25%; left: 93.4%; } /* uranus */
+.orbit-marker:nth-child(17), .orbit-label:nth-child(18) { top: 40%; left: 99%; } /* neptun */
+
 
 .nav-btn {
     background: rgba(255, 255, 255, 0.1);
@@ -68,7 +100,7 @@ nav {
     color: var(--primary-color);
     font-size: 2rem;
     padding: 25px;
-    margin: 50px;
+    margin: 20px;
     cursor: pointer;
     border-radius: 50%;
     transition: background-color 0.3s;
