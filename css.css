@@ -316,75 +316,24 @@ section {
     margin: auto;
 }
 
-/* --------------------------------------------------- */
-/* Mælke experiment */
-
-.milk-container {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    padding: 40px;
-    margin-top: 40px;
-}
-
-.milk-item {
-    position: relative;
-    cursor: pointer;
-}
-
-.milk-item img {
-    width: 200px;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.info-circle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    width: 300px;
-    height: 300px;
-    background: rgba(75, 0, 130, 0.95);
-    border-radius: 50%;
-    padding: 30px;
-    opacity: 0;
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.button-container {
     text-align: center;
+    margin: 40px 0;
 }
 
-.info-circle h3 {
-    margin: 0 0 5px 0;
+.timeline-button {
+    background-color: #8A2BE2;  /* Lilla farve */
     color: white;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
 }
 
-.info-circle p {
-    margin: 0 0 15px 0;
-    color: #ccc;
-}
-
-.info-circle ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 0.9em;
-    color: white;
-}
-
-.info-circle li {
-    margin-bottom: 8px;
-}
-
-.milk-item:hover .info-circle {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.milk-item:hover img {
-    transform: scale(1.1);
+.timeline-button:hover {
+    background-color: #6B1FB0;  /* Mørkere lilla ved hover */
 }
 
 /* --------------------------------------------------- */
