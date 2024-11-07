@@ -340,3 +340,12 @@ section {
 .milk-item:hover img {
     transform: scale(1.1);
 }
+
+/* --------------------------------------------------- */
+/* Planternes rejse */
+
+.video-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
