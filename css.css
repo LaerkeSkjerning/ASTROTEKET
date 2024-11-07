@@ -339,6 +339,20 @@ section {
     background-color: #6B1FB0;  /* Mørkere lilla ved hover */
 }
 
+/* Andreas Mogensen tidslinje */
+#video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.scaled-video {
+    width: 40%;
+    max-width: 1000px;
+    border-radius: 10px;
+}
+
+
 /* --------------------------------------------------- */
 /* Planternes rejse */
 
