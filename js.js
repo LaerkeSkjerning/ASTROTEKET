@@ -87,11 +87,13 @@ document.addEventListener('DOMContentLoaded', () => {
     leftButton.addEventListener('click', () => {
         currentPlanetIndex = (currentPlanetIndex - 1 + planets.length) % planets.length;
         displayPlanet();
+        updatePlanetInfo(planets[currentPlanetIndex].name.toLowerCase());
     });
 
     rightButton.addEventListener('click', () => {
         currentPlanetIndex = (currentPlanetIndex + 1) % planets.length;
         displayPlanet();
+        updatePlanetInfo(planets[currentPlanetIndex].name.toLowerCase());
     });
 
     // Click handlers for orbit markers
@@ -100,6 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
         marker.addEventListener('click', () => {
             currentPlanetIndex = index;
             displayPlanet();
+            updatePlanetInfo(planets[currentPlanetIndex].name.toLowerCase());
         });
     });
 
